@@ -29,9 +29,9 @@ public class PaymentController
         int result =paymentService.create(payment);
         log.info("结果-----------"+result);
         if(result>0){
-            return new CommonResult(200,"成功 "+serverport,result);
+            return new CommonResult(200,"成功"+serverport,result);
         }else {
-            return new CommonResult(444,"失败"+serverport);
+            return new CommonResult(444,"失败");
         }
     }
 
